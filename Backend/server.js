@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use(cors({
-  origin: "https://fontend-shoppingpage.vercel.app/", // Allow your frontend's origin
+  origin: "https://fontend-shoppingpage.vercel.app", // Allow your frontend's origin
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow all necessary methods
  credentials:true
 }));
