@@ -1,0 +1,44 @@
+.mainBanner{
+    background: linear-gradient(180deg,rgb(236, 236, 252),rgb(170, 247, 170));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px 0px 20px;
+    height: 70vh;
+}
+.mainBannerDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
+.mainBannerDetails button{
+    width: 30%;
+    background: linear-gradient(180deg,rgb(190, 190, 241),grey);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.mainBannerDetails button:hover{
+    color: linear-gradient(180deg,rgb(190, 190, 241),grey);
+    background: #817a7a;
+}
+.mainBannerImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:500px){
+.mainBanner{
+    grid-template-columns: 1fr;
+}
+}
+@media (max-width:400px){
+.mainBannerDetails h3{
+
+    font-size: 15px;
+}
+}

@@ -1,0 +1,46 @@
+.adminLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.adminLoginBox{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgb(253, 198, 198);
+    padding: 20px;
+    gap: 10px;
+    width: 25%;
+     height:50%;
+    align-items: center;
+    justify-content: center;
+}
+.adminLoginBox input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.adminLoginBox button{
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    background: green;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@media (max-width:1100px){
+    .adminLoginBox{
+        width: 50%;
+     height:50%;
+    }
+}
+@media (max-width:1100px){
+    .adminLoginBox{
+        width: 90%;
+     height:50%;
+    }
+}

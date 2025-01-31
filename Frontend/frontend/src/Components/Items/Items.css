@@ -1,0 +1,46 @@
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.itemContent img{
+  height: 250px;
+  width: 100%;
+  
+}
+.itemDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+}
+.itemDetails p{
+    color: black;
+}
+.itemPrices{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+.itemPrices .oldPrice{
+    font-size: 12px;
+    color:rgb(158, 122, 74);
+    text-decoration: line-through;
+}
+.itemPrices .newPrice{
+ font-size: 15px;
+}
+.items:hover{
+    transform: scale(1.05);
+    transition: .25s ease-in-out;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.sidebarpage{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+@media (max-width:768px){
+    .sidebarpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

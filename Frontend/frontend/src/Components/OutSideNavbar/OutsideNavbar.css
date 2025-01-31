@@ -1,0 +1,44 @@
+.outsideNavbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: .5px solid black;
+    padding: 10px;
+}
+.buttons{
+   
+    display: flex;
+    gap: 30px;
+    
+}
+.buttons button{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    outline: none;
+    background: rgb(97, 156, 97);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .buttons button{
+        font-size: 10px;
+        font-weight: 400;
+        padding: 3px 10px 3px 10px;
+    }
+    .buttons{
+        gap: 10px;
+    }
+    .outsideNavbar h1{
+        font-size: 25px;
+    }
+}
+@media (max-width:450px){
+.outsideNavbar h1{
+    font-size: 15px;
+}
+.buttons button{
+    font-size: 8px;
+}
+}

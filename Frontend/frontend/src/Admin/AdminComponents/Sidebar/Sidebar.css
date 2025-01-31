@@ -1,0 +1,21 @@
+.AdminSidebar{
+    padding: 30px 0px 10px 0px;
+    width: auto;
+}
+ .AdminSidebar h3{
+    color: black;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+.AdminSidebar h3:hover{
+    background: rgb(204, 192, 192);
+}
+@media (max-width:768px) {
+    .AdminSidebar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+  }
