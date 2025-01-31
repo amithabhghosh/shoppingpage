@@ -17,6 +17,13 @@ app.use(cors({
   credentials: true  // Allow credentials to be sent
 }));
 
+
+app.options("*", cors({
+  origin: "https://fontend-shoppingpage.vercel.app", 
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+
 app.get("/",(req,res)=>{
   res.send("Hello World")
 })
