@@ -9,12 +9,12 @@ const adminRoute=require("./routes/adminRoutes")
 const cartRoute=require("./routes/cartRoutes")
 
 app.use(bodyParser.json());
-app.use(cors());
+
 
 app.use(cors({
-  origin: "https://fontend-shoppingpage.vercel.app", // Allow your frontend's origin
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow all necessary methods
- credentials:true
+  origin: "https://fontend-shoppingpage.vercel.app",  // Use the exact frontend URL here
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true  // Allow credentials to be sent
 }));
 
 app.get("/",(req,res)=>{
