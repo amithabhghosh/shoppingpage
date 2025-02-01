@@ -10,19 +10,16 @@ const cartRoute=require("./routes/cartRoutes")
 
 app.use(bodyParser.json());
 
+const allowedOrigin = "https://fontend-shoppingpage.vercel.app";
 
 app.use(cors({
-  origin: "https://fontend-shoppingpage.vercel.app/",  // Use the exact frontend URL here
+  origin: allowedOrigin,  // Use the exact frontend URL here
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true  // Allow credentials to be sent
 }));
 
 
-app.options("*", cors({
-  origin: "https://fontend-shoppingpage.vercel.app", 
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true
-}));
+
 
 app.get("/",(req,res)=>{
   res.send("Hello World")

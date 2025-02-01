@@ -15,7 +15,7 @@ setInput({...input,[e.target.name]:e.target.value})
     }
     const loginHandle=async()=>{
         try {
-            const response=await axios.post("https://shop-backend-sooty.vercel.app/login",input).then((res)=>res.data).then((data)=>data.token)
+            const response=await API.post("/login",input).then((res)=>res.data).then((data)=>data.token)
             localStorage.setItem("user_token",response)
             alert("Login Succesful")
           navigate("/home") 
