@@ -3,6 +3,7 @@ import './Login.css'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import API from '../../ConnectApi'
+import axios from 'axios'
 export const Login = () => {
     const navigate=useNavigate()
     const [input,setInput]=useState({
@@ -14,7 +15,7 @@ setInput({...input,[e.target.name]:e.target.value})
     }
     const loginHandle=async()=>{
         try {
-            const response=await API.post("/login",input).then((res)=>res.data).then((data)=>data.token)
+            const response=await axios.post("https://shop-backend-sooty.vercel.app/login",input).then((res)=>res.data).then((data)=>data.token)
             localStorage.setItem("user_token",response)
             alert("Login Succesful")
           navigate("/home") 

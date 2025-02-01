@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 app.use(cors({
-  origin: "https://fontend-shoppingpage.vercel.app",  // Use the exact frontend URL here
+  origin: "https://fontend-shoppingpage.vercel.app/",  // Use the exact frontend URL here
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true  // Allow credentials to be sent
 }));
@@ -29,17 +29,13 @@ app.get("/",(req,res)=>{
 })
 
 
-
-
 app.use("/images",express.static("uploads/images"))
 app.use("/",userRoute)
 app.use("/admin",adminRoute)
 app.use("/cart",cartRoute)
 
 
-
   const PORT = process.env.PORT || 5000;
-
 
   mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>console.log("mongodb Connected Succesfully"))
